@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIFT - LOG | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">LIFT – LOG</div>
+
+    <!-- Logs dropdown -->
+    <div class="dropdown">
+      <label class="dropdown-trigger" for="logs-toggle">
+        Logs <span class="arrow-icon">▲</span>
+      </label>
+      <input type="checkbox" id="logs-toggle">
+      <div class="logs-menu">
+        <div class="logs-section-title">Log for the day today</div>
+        <a href="../pg8/index.html">Weight lifting</a>
+        <a href="../pg8/index.html">Cardio</a>
+        <a href="../pg8/index.html">Calorie</a>
+        <div class="logs-divider"></div>
+        <a href="../pg13/index.html" class="logs-main-link">View Logs</a>
+        <a href="../pg7/index.html" class="logs-main-link">New Challenges</a>
+      </div>
+    </div>
+
+    <a href="../pg6/index.html" class="nav-link active">Leaderboards</a>
+    <a href="../pg7/index.html" class="nav-link">Challenges</a>
+
+    <div class="nav-right">
+      <!-- ... menu dropdown -->
+      <div class="dropdown">
+        <label class="dots-btn" for="dots-toggle">• • •</label>
+        <input type="checkbox" id="dots-toggle">
+        <div class="dots-menu">
+          <div class="dots-top">
+            <div class="dots-left">
+              <div class="dots-section-title">Active Friends</div>
+              <div class="friend-item">
+                <img src="./pfp.jpg" alt="Duane">
+                <span>Duane Payad</span>
+              </div>
+              <div class="friend-item">
+                <img src="./pfp2.jpg" alt="Justin">
+                <span>Justin Nabuntaran</span>
+              </div>
+              <div class="friend-item">
+                <img src="./pfp4.jpg" alt="Pedro">
+                <span>Pedro penduko</span>
+              </div>
+            </div>
+            <div class="dots-right">
+              <a href="../pg13/index.html">View Profile</a>
+              <a href="../pg13/index.html">View logs</a>
+              <a href="../pg7/index.html">View Challenges</a>
+              <a href="../Pg5/index.html">View Leaderboards</a>
+            </div>
+          </div>
+          <a href="../pg9/index.html">
+          <button class="admin-mode-btn">Admin Mode</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile picture -->
+      <div class="nav-profile-pic">
+        <img src="pfp7.jpg" alt="Profile">
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-wrap">
+
+    <!-- LEFT SIDEBAR -->
+    <div class="sidebar-left">
+      <div class="profile-card">
+        <div class="profile-card-top">
+          <img src="./pfp7.jpg" alt="Coach" class="profile-card-img">
+          <div>
+            <div class="profile-card-role">Coach</div>
+            <div class="profile-card-name">Michael Donato</div>
+          </div>
+        </div>
+        <div class="profile-stats">
+          <div class="stat">
+            <div class="stat-label">Following</div>
+            <div class="stat-val">10</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-label">Followers</div>
+            <div class="stat-val">5k</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-label">Logs</div>
+            <div class="stat-val">146</div>
+          </div>
+        </div>
+        <div class="recent-log-label">Recent Log</div>
+        <div class="recent-log-entry">
+          Night Weight Training
+          <span>• April, 8, 2026</span>
+        </div>
+        <button class="view-profile-btn">View Profile</button>
+      </div>
+    </div>
+
+    <!-- FEED -->
+    <div class="feed">
+
+      <!-- Post 1 -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="./pfp.jpg" alt="Gab" class="post-avatar">
+          <div>
+            <div class="post-name">Gab Salamanca</div>
+            <div class="post-date">April, 21, 2026</div>
+          </div>
+        </div>
+        <div class="post-title-row">
+          <span class="post-icon">⚙️</span>
+          <span class="post-title">Noon Weight Training</span>
+        </div>
+        <div class="post-image">
+          <img src="./images (2).jpg" alt="Workout">
+        </div>
+        <div class="post-caption">Chest Day?</div>
+      </div>
+
+      <!-- Post 2 (no image, just header) -->
+      <div class="post-card">
+        <div class="post-header">
+          <img src="./pfp2.jpg" alt="Boss WAR" class="post-avatar">
+          <div>
+            <div class="post-name">Boss WAR</div>
+            <div class="post-date">April, 17, 2026</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="sidebar-right">
+
+      <div class="right-section-title">New Challenges</div>
+      <div class="challenge-item">
+        <span class="ch-icon">⚙️</span>
+        <span>Night Train today</span>
+      </div>
+      <div class="challenge-item">
+        <span class="ch-icon">👟</span>
+        <span>Go Walk for 30m</span>
+      </div>
+      <div class="challenge-item">
+        <span class="ch-icon">🔺</span>
+        <span>Go up the leaderboard by 1</span>
+      </div>
+
+      <div class="right-section-title" style="margin-top: 1.5rem;">
+        People you may know
+      </div>
+
+      <div class="people-item">
+        <img src="pfp6.jpg" alt="Lebron" class="people-avatar">
+        <span>Lebron James</span>
+      </div>
+      <div class="people-item">
+        <img src="./pfp4.jpg" alt="Lance" class="people-avatar">
+        <span>Lance_Torres</span>
+      </div>
+      <div class="people-item">
+        <img src="./pfp6.jpg" alt="Micky" class="people-avatar">
+        <span>MickyG</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">LIFT – LOG</div>
+    <div>
+      <h4>Email</h4>
+      <p>LiftLog@gmail.com</p>
+      <h4>Tel No.</h4>
+      <p>(+63) 09950198246</p>
+    </div>
+    <div>
+      <h4>Socials</h4>
+      <p>• Facebook</p>
+      <p>• Instagram</p>
+      <p>• Tiktok</p>
+    </div>
+    <div>
+      <h4>Mailing Address</h4>
+      <p>Random St., Any City, ST 12345</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIFT - LOG | Profile</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS (must exist in the same folder as this HTML) -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="topnav">
+    <div class="nav-left">
+      <a href="../pg10/index.html">
+      <div class="brand">LIFT - LOG</div>
+      </a>
+      <!-- Logs dropdown -->
+      <div class="dropdown">
+        <input type="checkbox" id="logs-toggle" class="dd-toggle">
+        <label for="logs-toggle" class="nav-item dd-trigger">
+          Logs <span class="caret">▲</span>
+        </label>
+
+        <div class="dd-menu dd-logs" role="menu" aria-label="Logs menu">
+          <div class="dd-title">Log for the day today</div>
+          <a href="../Pg3/index.html">Weight lifting</a>
+          <a href="../Pg3/index.html">Cardio</a>
+          <a href="../Pg3/index.html">Calorie</a>
+
+          <div class="dd-divider"></div>
+
+          <!-- If you want purple highlight like your other update:
+               add class="dd-highlight" on this link -->
+          <a href="../Pg3/index.html">View Logs</a>
+          <a href="../Pg6/index.html">New Challenges</a>
+        </div>
+      </div>
+
+      <a class="nav-item active" href="../Pg5/index.html">Leaderboards</a>
+      <a class="nav-item" href="../Pg6/index.html">Challenges</a>
+    </div>
+
+    <div class="nav-right">
+      <!-- Profile icon -->
+      <button class="icon-btn" type="button" aria-label="Profile icon">
+        <span class="icon-circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="white" stroke-width="2">
+            <path d="M20 21a8 8 0 0 0-16 0"></path>
+            <circle cx="12" cy="8" r="4"></circle>
+          </svg>
+        </span>
+      </button>
+
+      <!-- Dots dropdown -->
+      <div class="dropdown">
+        <input type="checkbox" id="dots-toggle" class="dd-toggle">
+        <label for="dots-toggle" class="icon-btn" aria-label="More options">
+          <span class="pill-dots">• • •</span>
+        </label>
+
+        <div class="dd-menu dd-dots" role="menu" aria-label="More menu">
+          <div class="dots-grid">
+            <!-- Left column: Active friends -->
+            <div class="dots-col">
+              <div class="dots-heading">Active Friends</div>
+
+              <div class="friend-item">
+                <img src="../Pg4/duane.jpg" alt="Friend avatar">
+                <span>Friend A</span>
+              </div>
+              <div class="friend-item">
+                <img src="../Pg4/justin.jpg" alt="Friend avatar">
+                <span>Friend B</span>
+              </div>
+              <div class="friend-item">
+                <img src="../Pg4/pedro.jpg" alt="Friend avatar">
+                <span>Friend C</span>
+              </div>
+            </div>
+
+            <!-- Right column: quick links -->
+            <div class="dots-col dots-links">
+              <a href="../Pg9/index.html">View Profile</a>
+              <a href="../Pg3/index.html">View logs</a>
+              <a href="../Pg6/index.html">View Challenges</a>
+              <a class="dots-underline" href="../Pg5/index.html">View Leaderboards</a>
+            </div>
+          </div>
+
+          <div class="dots-admin">
+            <div class="dots-heading">Admin Options</div>
+
+            <div class="admin-list">
+              <div class="admin-icon" aria-hidden="true">
+                <!-- Gear -->
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a7.7 7.7 0 0 0 .1-2l2-1.1-2-3.5-2.2.5a7.5 7.5 0 0 0-1.7-1l-.4-2.2H10l-.4 2.2a7.5 7.5 0 0 0-1.7 1L5.7 8.4 3.7 12l2 1.1a7.7 7.7 0 0 0 .1 2l-2 1.1 2 3.5 2.2-.5a7.5 7.5 0 0 0 1.7 1l.4 2.2h4.9l.4-2.2a7.5 7.5 0 0 0 1.7-1l2.2.5 2-3.5-2-1.1z"></path>
+                </svg>
+              </div>
+
+              <ul>
+                <li>Remove, Edit, Manage and Enable Accounts</li>
+                <li>Review Accounts &amp; Reports</li>
+              </ul>
+            </div>
+
+            <!-- Admin Mode button -->
+            <a class="admin-mode" href="../Pg7/index.html">Admin Mode</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avatar -->
+      <div class="avatar">
+        <img src="../Pg4/profile.jpg" alt="User avatar" />
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN FRAME -->
+  <main class="profile-wrap">
+    <section class="frame">
+      <div class="profile-grid">
+
+        <!-- LEFT: Profile summary -->
+        <aside class="left-card">
+          <div class="big-ava">
+            <img src="./pfp8.png" alt="Profile avatar">
+          </div>
+
+          <div class="name-row">
+            <div class="name">Lance_Torres</div>
+            <div class="role">Admin</div>
+          </div>
+
+          <div class="location">GMA, Cavite, Philippines</div>
+
+          <div class="weeks">Last 2 weeks</div>
+          <div class="big-num">0</div>
+
+          <div class="total">Total Challenges<br/>Done</div>
+        </aside>
+
+        <!-- CENTER: Last post -->
+        <section class="center-card">
+          <div class="post-card">
+            <div class="post-head">
+              <img class="ava" src="./pfp8.png" alt="Post avatar">
+              <div>
+                <div class="post-user">
+                  <span class="user-tag">Lance_Torres</span>
+                </div>
+                <div class="post-date">April, 7, 2026</div>
+              </div>
+            </div>
+
+            <div class="post-title">
+              <span class="post-emoji" aria-hidden="true">🏋️</span>
+              <span>Morning Weight Lifting</span>
+            </div>
+
+            <div class="post-media">
+              <img src="./post1.jpg" alt="Workout photo">
+            </div>
+
+            <div class="post-caption">HOLYYYY UPPERR!!</div>
+          </div>
+
+          <div class="last-post-label">Last post</div>
+        </section>
+
+        <!-- RIGHT: Stats -->
+        <aside class="right-card">
+          <div class="mini-stats">
+            <div class="mini">
+              <div class="mini-label">Following</div>
+              <div class="mini-val">220</div>
+            </div>
+            <div class="mini-divider"></div>
+            <div class="mini">
+              <div class="mini-label">Folowers</div>
+              <div class="mini-val">1k</div>
+            </div>
+            <div class="mini-divider"></div>
+            <div class="mini">
+              <div class="mini-label">Logs</div>
+              <div class="mini-val">78</div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">Recent Log</div>
+            <div class="recent-line">
+              <span>Night Weight Training</span>
+              <span class="muted">• April, 8, 2026</span>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">LeaderBoards</div>
+            <div class="lb-row">
+              <span>GMA</span>
+              <span>Ranking #12</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">LIFT - LOG</div>
+
+    <div class="footer-col">
+      <div class="footer-h">Email</div>
+      <div class="footer-p">LiftLog@gmail.com</div>
+      <div class="footer-h">Tel No.</div>
+      <div class="footer-p">(+63) 09950198246</div>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-h">Socials</div>
+      <div class="footer-p">• Facebook</div>
+      <div class="footer-p">• Instagram</div>
+      <div class="footer-p">• Tiktok</div>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-h">Mailing Address</div>
+      <div class="footer-p">Random St., Any City, ST 12345</div>
+    </div>
+  </footer>
+
+</body>
+</html>

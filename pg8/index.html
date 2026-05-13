@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIFT - LOG | Logs</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR (matches screenshot style) -->
+  <header class="logs-topbar">
+    <div class="brand">LIFT - LOG</div>
+    <div class="page-title">Logs</div>
+    <div class="topbar-spacer" aria-hidden="true"></div>
+  </header>
+
+  <!-- LOGS FORM AREA -->
+  <main class="logs-shell">
+
+    <section class="logs-panel" aria-label="Create log panel">
+
+      <!-- Mode toggle (pure CSS) -->
+      <div class="mode-toggle" role="tablist" aria-label="Log Type">
+        <input type="radio" name="mode" id="mode-weight" checked>
+        <input type="radio" name="mode" id="mode-cardio">
+
+        <div class="mode-buttons">
+          <label for="mode-weight" class="mode-btn" role="tab" aria-selected="true">Weight Lifting</label>
+          <label for="mode-cardio" class="mode-btn" role="tab" aria-selected="false">Cardio</label>
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div class="form-grid">
+
+        <!-- LEFT: caption + tag -->
+        <div class="col left">
+          <label class="field-label" for="caption">Caption</label>
+          <input class="field-input" id="caption" type="text" placeholder="Say something?" />
+
+          <label class="field-label" for="tag">Tag people</label>
+          <input class="field-input" id="tag" type="text" placeholder="@" />
+        </div>
+
+        <!-- MIDDLE: weight input + upload -->
+        <div class="col mid">
+          <div class="two-row">
+            <div>
+              <label class="field-label" for="weight-mid">Weight lifted</label>
+              <input class="field-input small" id="weight-mid" type="text" placeholder="—" />
+            </div>
+          </div>
+
+          <div class="upload-area">
+            <div class="upload-label">Upload Image</div>
+
+            <!-- Static “upload” box (no backend needed) -->
+            <label class="upload-box" for="fake-upload" title="Static upload (visual only)">
+              <input id="fake-upload" type="file" accept="image/*" />
+              <div class="upload-icon" aria-hidden="true">
+                <div class="icon-frame">
+                  <div class="sun"></div>
+                  <div class="mountain"></div>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- RIGHT: weight inputs + post -->
+        <div class="col right">
+          <label class="field-label" for="weight-a">Weight lifted</label>
+
+          <div class="weight-duo">
+            <input class="field-input small" id="weight-a" type="text" placeholder="—" />
+            <input class="field-input small" id="weight-b" type="text" placeholder="—" />
+          </div>
+
+          <button class="post-btn" type="button">Post</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROGRESS LOGS -->
+    <section class="progress" aria-label="Progress logs">
+      <h1 class="progress-title">Progress Logs</h1>
+
+      <div class="progress-block">
+        <h2 class="progress-sub">Weight Lifted</h2>
+
+        <div class="progress-row">
+          <div class="log-chip">
+            <div class="chip-date">April 12 2026</div>
+            <div class="chip-meta">Upper +1750p</div>
+          </div>
+          <div class="log-chip">
+            <div class="chip-date">April 11 2026</div>
+            <div class="chip-meta">Lower +1500p</div>
+          </div>
+          <div class="log-chip">
+            <div class="chip-date">April 10 2026</div>
+            <div class="chip-meta">Rest/Na?</div>
+          </div>
+          <div class="log-chip">
+            <div class="chip-date">April 09 2026</div>
+            <div class="chip-meta">lower +1.000p</div>
+          </div>
+          <div class="log-chip">
+            <div class="chip-date">April 08 2026</div>
+            <div class="chip-meta">Upper +1.500p</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-block">
+        <h2 class="progress-sub">Cardio Consistency</h2>
+
+        <div class="progress-row">
+          <div class="log-chip">
+            <div class="chip-date">April 12 2026</div>
+            <div class="chip-meta"><span>5km</span> <span class="dot">·</span> <span>39m</span></div>
+          </div>
+          <div class="log-chip">
+            <div class="chip-date">April 11 2026</div>
+            <div class="chip-meta"><span>7km</span> <span class="dot">·</span> <span>46m</span></div>
+          </div>
+          <div class="log-chip">
+            <div class="chip-date">April 10 2026</div>
+            <div class="chip-meta"><span>3km</span> <span class="dot">·</span> <span>32m</span></div>
+          </div>
+          <div class="log-chip">
+            <div class="chip-date">April 09 2026</div>
+            <div class="chip-meta"><span>6km</span> <span class="dot">·</span> <span>54m</span></div>
+          </div>
+          <div class="log-chip">
+            <div class="chip-date">April 08 2026</div>
+            <div class="chip-meta"><span>7km</span> <span class="dot">·</span> <span>68m</span></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

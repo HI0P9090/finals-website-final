@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIFT - LOG | Challenges</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- HERO BANNER -->
+  <div class="ch-banner">
+    <div class="ch-banner-left">
+      <div class="ch-banner-icon">⚙️</div>
+      <div class="ch-banner-text">
+        <h2>Try new Exercices</h2>
+        <p>Go chat a coach to teach you or meet up Then try the new Exercise</p>
+      </div>
+      <button class="try-btn">Try challenge</button>
+      <span class="ch-counter">0/1</span>
+    </div>
+    <div class="ch-banner-right">
+      <img src="pfp7.jpg" alt="Coach">
+    </div>
+    <a href="../pg5/index.html">
+    <div class="ch-banner-logo">LIFT – LOG</div>
+    </a>
+  </div>
+
+  <!-- TABS using radio (pure CSS) -->
+  <div class="ch-wrap">
+
+    <input type="radio" name="ch-tab" id="ch-all" checked>
+    <input type="radio" name="ch-tab" id="ch-weight">
+    <input type="radio" name="ch-tab" id="ch-cardio">
+
+    <div class="ch-tab-labels">
+      <label for="ch-all" class="ch-tab-btn">All</label>
+      <label for="ch-weight" class="ch-tab-btn">Weight Lifting</label>
+      <label for="ch-cardio" class="ch-tab-btn">Cardio</label>
+    </div>
+
+    <!-- ALL -->
+    <div class="ch-grid" id="grid-all">
+      <div class="ch-card"><span class="ch-card-icon">⚙️</span><span>Lift Extra 1 Set per exercise</span></div>
+      <div class="ch-card"><span class="ch-card-icon">👟</span><span>Walk for 1 Hour</span></div>
+      <div class="ch-card"><span class="ch-card-icon">👟</span><span>Walk on New Terrain</span></div>
+      <div class="ch-card"><span class="ch-card-icon">👟</span><span>Run or Walk With Friends</span></div>
+      <div class="ch-card"><span class="ch-card-icon">⚙️</span><span>Try new Exercices</span></div>
+      <div class="ch-card"><span class="ch-card-icon">⚙️</span><span>Work Out With Friends</span></div>
+      <div class="ch-card"><span class="ch-card-icon">⚙️</span><span>Stay consistent for 3 weeks</span></div>
+      <div class="ch-card"><span class="ch-card-icon">👟</span><span>Get new personal Record</span></div>
+      <div class="ch-card"><span class="ch-card-icon">⚙️</span><span>Get new personal Record</span></div>
+    </div>
+
+    <!-- WEIGHT LIFTING -->
+    <div class="ch-grid" id="grid-weight">
+      <div class="ch-card"><span class="ch-card-icon">⚙️</span><span>Lift Extra 1 Set per exercise</span></div>
+      <div class="ch-card"><span class="ch-card-icon">⚙️</span><span>Try new Exercices</span></div>
+      <div class="ch-card"><span class="ch-card-icon">⚙️</span><span>Work Out With Friends</span></div>
+      <div class="ch-card"><span class="ch-card-icon">⚙️</span><span>Stay consistent for 3 weeks</span></div>
+      <div class="ch-card"><span class="ch-card-icon">⚙️</span><span>Get new personal Record</span></div>
+    </div>
+
+    <!-- CARDIO -->
+    <div class="ch-grid" id="grid-cardio">
+      <div class="ch-card"><span class="ch-card-icon">👟</span><span>Get new personal Record</span></div>
+      <div class="ch-card"><span class="ch-card-icon">👟</span><span>Walk for 1 Hour</span></div>
+      <div class="ch-card"><span class="ch-card-icon">👟</span><span>Run or Walk With Friends</span></div>
+      <div class="ch-card"><span class="ch-card-icon">👟</span><span>Walk on New Terrain</span></div>
+    </div>
+
+  </div>
+
+</body>
+</html>

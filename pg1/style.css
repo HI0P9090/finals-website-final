@@ -1,0 +1,191 @@
+/* ── HERO layout ── */
+.hero {
+  position: relative;
+  min-height: calc(100vh - 68px);
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+/* ── Form on the LEFT ── */
+.hero-left {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 4rem;
+}
+
+.form-card {
+  background: rgba(14, 30, 22, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 2.5rem 2rem;
+  width: 340px;
+}
+
+.form-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.form-card label {
+  display: block;
+  font-size: 0.88rem;
+  color: #e8e8e8;
+  margin-bottom: 0.35rem;
+}
+
+.form-card input {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 0.65rem 0.8rem;
+  color: black;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  margin-top: 0.5rem;
+}
+
+.login-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ── "Sign Up for Free!" on the RIGHT ── */
+.hero-right-text {
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+  padding: 3rem 5rem;
+}
+
+.hero-right-text h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+  max-width: 420px;
+}
+
+/* ── Switch link ── */
+.switch-link {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.switch-link a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ── DROPDOWN ── */
+.dropdown {
+  position: relative;
+}
+
+.dropdown input[type="checkbox"] {
+  display: none;
+}
+
+.dropdown-trigger {
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.dropdown-trigger:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  background: #1a3a2e;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.25rem;
+  z-index: 999;
+  width: 460px;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+#dropdown-toggle:checked ~ .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  min-width: 130px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding-right: 1.25rem;
+}
+
+.dropdown-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.dropdown-links a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-images {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.dropdown-img-card {
+  text-align: center;
+}
+
+.dropdown-img-card img {
+  width: 130px;
+  height: 90px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+.dropdown-img-card p {
+  font-size: 0.78rem;
+  color: white;
+  margin-top: 0.4rem;
+  text-decoration: underline;
+}

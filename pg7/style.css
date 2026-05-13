@@ -1,0 +1,150 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0b1a12;
+  color: white;
+}
+
+/* ── BANNER ── */
+.ch-banner {
+  background: #1e3d2e;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  gap: 1.25rem;
+  margin: 1rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.ch-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.ch-banner-icon {
+  font-size: 2.5rem;
+  background: rgba(255,255,255,0.1);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.ch-banner-text h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.ch-banner-text p {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.7);
+  max-width: 220px;
+  margin-top: 0.2rem;
+  line-height: 1.4;
+}
+
+.try-btn {
+  background: transparent;
+  border: 1.5px solid white;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.try-btn:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.ch-counter {
+  font-size: 0.95rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ch-banner-right img {
+  width: 150px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.ch-banner-logo {
+  font-weight: 800;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+}
+
+/* ── TABS ── */
+.ch-wrap {
+  padding: 0 1rem 2rem;
+}
+
+.ch-wrap input[type="radio"] {
+  display: none;
+}
+
+.ch-tab-labels {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.ch-tab-btn {
+  background: transparent;
+  border: 1.5px solid white;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+/* Active tab */
+#ch-all:checked ~ .ch-tab-labels label[for="ch-all"],
+#ch-weight:checked ~ .ch-tab-labels label[for="ch-weight"],
+#ch-cardio:checked ~ .ch-tab-labels label[for="ch-cardio"] {
+  background: white;
+  color: #0b1a12;
+}
+
+/* ── GRIDS ── */
+.ch-grid {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+#ch-all:checked ~ #grid-all,
+#ch-weight:checked ~ #grid-weight,
+#ch-cardio:checked ~ #grid-cardio {
+  display: grid;
+}
+
+.ch-card {
+  background: #1e3d2e;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.ch-card:hover {
+  background: #2d5a46;
+}
+
+.ch-card-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
