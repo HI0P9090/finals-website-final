@@ -1,0 +1,170 @@
+
+<!DOCTYPE html><!DOCTYPE  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <!-- NAV (Now includes Logs dropdown + Dots dropdown like your screenshots) -->
+  <nav class="topnav">
+    <div class="nav-left">
+      <a href="../pg10/index.html">
+      <div class="brand">LIFT - LOG</div>
+      </a>
+
+      <!-- Logs dropdown -->
+      <div class="dropdown">
+        <input type="checkbox" id="logs-toggle" class="dd-toggle">
+        <label for="logs-toggle" class="nav-item dd-trigger">
+          Logs <span class="caret">▲</span>
+        </label>
+
+        <div class="dd-menu dd-logs" role="menu" aria-label="Logs menu">
+          <div class="dd-title">Log for the day today</div>
+          <a href="../Pg3/index.html">Weight lifting</a>
+          <a href="../Pg3/index.html">Cardio</a>
+          <a href="../Pg3/index.html">Calorie</a>
+          <div class="dd-divider"></div>
+          <a class="dd-highlight" href="../Pg3/index.html">View Logs</a>
+          <a href="../Pg6/index.html">New Challenges</a>
+        </div>
+      </div>
+
+      <a class="nav-item" href="../Pg5/index.html">Leaderboards</a>
+      <a class="nav-item" href="../Pg6/index.html">Challenges</a>
+    </div>
+
+    <div class="nav-right">
+      <button class="icon-btn" type="button" aria-label="Profile icon">
+        <span class="icon-circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="white" stroke-width="2">
+            <path d="M20 21a8 8 0 0 0-16 0"></path>
+            <circle cx="12" cy="8" r="4"></circle>
+          </svg>
+        </span>
+      </button>
+
+      <!-- Dots dropdown -->
+      <div class="dropdown">
+        <input type="checkbox" id="dots-toggle" class="dd-toggle">
+        <label for="dots-toggle" class="icon-btn" aria-label="More options">
+          <span class="pill-dots">• • •</span>
+        </label>
+
+        <div class="dd-menu dd-dots" role="menu" aria-label="More menu">
+          <div class="dots-grid">
+            <div class="dots-col">
+              <div class="dots-heading">Active Friends</div>
+
+              <!-- Replace names/images as needed -->
+              <div class="friend-item">
+                <img src="../Pg4/duane.jpg" alt="Friend avatar">
+                <span>Friend A</span>
+              </div>
+              <div class="friend-item">
+                <img src="../Pg4/justin.jpg" alt="Friend avatar">
+                <span>Friend B</span>
+              </div>
+              <div class="friend-item">
+                <img src="../Pg4/pedro.jpg" alt="Friend avatar">
+                <span>Friend C</span>
+              </div>
+            </div>
+
+            <div class="dots-col dots-links">
+              <a href="../pg13/index.html">View Profile</a>
+              <a href="../Pg3/index.html">View logs</a>
+              <a href="../Pg6/index.html">View Challenges</a>
+              <a class="dots-underline" href="../Pg5/index.html">View Leaderboards</a>
+            </div>
+          </div>
+
+          <a class="admin-mode" href="../Pg7/index.html">Admin Mode</a>
+        </div>
+      </div>
+
+      <div class="avatar">
+        <img src="./pfp7.jpg" alt="User avatar">
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ PURE CSS EDIT MODE TOGGLE -->
+  <input type="checkbox" id="edit-mode" class="edit-toggle" />
+
+  <main class="admin-wrap">
+    <section class="frame">
+
+      <div class="table-shell">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th class="col-del"></th>
+              <th>Name</th>
+              <th>Reports</th>
+              <th>Active status</th>
+              <th>Inactive status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="col-del"><button class="del-btn" type="button">Delete</button></td>
+              <td>User A</td><td>0</td><td class="status">Active</td><td class="status">Active</td>
+            </tr>
+            <tr>
+              <td class="col-del"><button class="del-btn" type="button">Delete</button></td>
+              <td>User B</td><td>1</td><td class="status">Active</td><td class="status">Active</td>
+            </tr>
+            <tr>
+              <td class="col-del"><button class="del-btn" type="button">Delete</button></td>
+              <td>User C</td><td>0</td><td class="status">Inactive</td><td class="status">Inactive for more than 2 Days</td>
+            </tr>
+            <tr>
+              <td class="col-del"><button class="del-btn" type="button">Delete</button></td>
+              <td>User D</td><td>0</td><td class="status">Inactive</td><td class="status">Inactive for more than 5 Days</td>
+            </tr>
+            <tr>
+              <td class="col-del"><button class="del-btn" type="button">Delete</button></td>
+              <td>User E</td><td>0</td><td class="status">Inactive</td><td class="status">Inactive for more than 15 Days</td>
+            </tr>
+            <tr>
+              <td class="col-del"><button class="del-btn" type="button">Delete</button></td>
+              <td>User F</td><td>3</td><td class="status">Inactive</td><td class="status">Inactive for more than 30 Days</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="search-row">
+        <div class="search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="M21 21l-4.3-4.3"></path>
+          </svg>
+        </div>
+        <input class="search-input" type="text" aria-label="Search accounts" />
+      </div>
+
+      <div class="actions">
+        <label for="edit-mode" class="edit-btn">
+          <span class="label-normal">Edit</span>
+          <span class="label-editing">Editing</span>
+        </label>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
+``
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIFT - LOG | Admin - Accounts</title>
+
